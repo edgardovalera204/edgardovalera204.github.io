@@ -1,0 +1,99 @@
+/* Reset some basic elements */
+body, h1, h2, p, blockquote, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------------------- */
+/* Common Styles for the Entire Site */
+/* --------------------------------- */
+body { width: 100%; }
+
+h1 {
+  font-family: 'Changa One', sans-serif;
+  font-size: 64px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h2 {
+  
+}
+
+p {
+  font-family: 'Rokkitt', serif;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+/* -------------- */
+/* Navbar Styling */
+/* -------------- */
+nav {
+  /* Position */
+  position: fixed;
+  left: 50%;
+  
+  /* Box model */
+  display: table;
+  margin-top: 20px;
+  transform: translateX(-50%);
+}
+
+  nav a:link, .register-button {
+    /* Box Model */
+    display: inline-block;
+    margin-right: 20px;
+    padding: 20px;
+    vertical-align: middle;
+
+    /* Typography */
+    color: #fff;
+    font-family: 'Changa One', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    /* Visual */
+    border-radius: 4px;
+  }
+
+  nav a:hover { background-color: rgba(255, 255, 255, 0.1); }
+  nav a:active { background-color: rgba(255, 255, 255, 0.2); }
+
+  nav #home-button {
+    width: 150px;
+    height: 100px;
+  }
+
+  .register-button { background-color: rgba(214, 0, 10, 1.0); }
+
+/* ----------------------------- */
+/* First Section of the Homepage */
+/* ----------------------------- */
+#fold {
+  /* Box Model */
+  padding-top: 200px;
+  
+  /* Typography */
+  color: #fff;
+  
+  /* Visual */
+  background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider4.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+  #fold .content {
+    /* Box Model */
+    width: 60%;
+    margin: 0 auto;
+
+    /* Typography */
+    text-align: center;
+  }
+
+    #fold .content h1 { margin-bottom: 10px; }
+    #fold .content p { margin-bottom: 50px; }
+    #fold .content .register-button { margin-bottom: 80px; }
