@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>5K Foam Fest Canada</title>
     <!-- fonts used -->
     <link href='http://fonts.googleapis.com/css?family=Rokkitt|Changa+One' rel='stylesheet' type='text/css'>
-    <!-- functionally equivalent to DOCTYPE html -->
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <!-- defines character coding of the page -->
-    <meta charset="UTF-8">
-    <!-- contains all styles -->
+    <!-- stylesheets -->
     <link rel="stylesheet" href="/assets/main.css">
-    <title>5K Foam Fest Canada</title>
+    <link rel="stylesheet" href="/assets/jquery.countdown.css">
+    <!-- jquery -->
+    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Countdown script -->
+    <script type="text/javascript" src="/assets/jquery.plugin.js"></script>
+    <script type="text/javascript" src="/assets/jquery.countdown.js"></script>
+    <script>
+      $(function () {
+        var nextEvent = new Date();
+        nextEvent = new Date(nextEvent.getFullYear(), 6 - 1, 13);
+        $('#defaultCountdown').countdown({until: nextEvent, padZeroes: true});
+      }); 
+    </script>
   </head>
 
   <body>
+    <!-- navbar -->
     <nav>
-        <a href="/register/" class="register-button">Register</a>
-        <a href="/about/">About</a>
-        <a href="/the-race/">The Race</a>
-        <a href = "/"><img src="/assets/5KFoamFestLogo.png" alt="5K Foam Fest Logo" id="home-button"></a>
-        <a href="/locations/">Locations</a>
-        <a href="/partners/">Partners</a>
-        <a href="/faqs/">Faqs</a>
+      <div>
+          <a href="/register/" class="register-button">Register</a>
+          <a href="/about/">About</a>
+          <a href="/the-race/">The Race</a>
+          <a href = "/"><img src="/assets/5KFoamFestLogo.png" alt="5K Foam Fest Logo" id="home-button"></a>
+          <a href="/locations/">Locations</a>
+          <a href="/partners/">Partners</a>
+          <a href="/faqs/">Faqs</a>
+      </div>
     </nav>
     <section id="fold">
       <div class="content">
         <h1>A Funcore Atmosphere</h1>
         <p>Dress in crazy fun costumes, get muddy, and faceplant in foam with your friends. What are you waiting for? The next race is in...</p>
+        <div id="defaultCountdown"></div>
         <a href="/register/" class="register-button">Register Now</a>
       </div>
     </section>

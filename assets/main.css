@@ -10,7 +10,7 @@ dl, dd, ol, ul, figure {
 /* --------------------------------- */
 body { width: 100%; }
 
-h1 {
+h1, .countdown-amount {
   font-family: 'Changa One', sans-serif;
   font-size: 64px;
   letter-spacing: 2px;
@@ -21,7 +21,7 @@ h2 {
   
 }
 
-p {
+p, .countdown-period {
   font-family: 'Rokkitt', serif;
   font-size: 32px;
   line-height: 1.25;
@@ -31,15 +31,16 @@ p {
 /* Navbar Styling */
 /* -------------- */
 nav {
-  /* Position */
   position: fixed;
-  left: 50%;
-  
-  /* Box model */
-  display: table;
-  margin-top: 20px;
-  transform: translateX(-50%);
+  width: 100%;
+  background-color: rgba(0, 106, 246, 0.75);
 }
+
+  nav div {
+    /* Box model */
+    display: table;
+    margin: auto;
+  }
 
   nav a:link, .register-button {
     /* Box Model */
@@ -74,7 +75,7 @@ nav {
 /* ----------------------------- */
 #fold {
   /* Box Model */
-  padding-top: 200px;
+  padding-top: 220px;
   
   /* Typography */
   color: #fff;
@@ -87,7 +88,7 @@ nav {
 
   #fold .content {
     /* Box Model */
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
 
     /* Typography */
@@ -95,5 +96,5 @@ nav {
   }
 
     #fold .content h1 { margin-bottom: 10px; }
-    #fold .content p { margin-bottom: 50px; }
+    #fold .content p { margin-bottom: 10px; }
     #fold .content .register-button { margin-bottom: 80px; }
