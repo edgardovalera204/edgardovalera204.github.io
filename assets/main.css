@@ -64,7 +64,7 @@ nav {
   nav a:active { background-color: rgba(255, 255, 255, 0.2); }
 
   nav #home-button {
-    width: 150px;
+    width: 200px;
     height: 100px;
   }
 
@@ -84,6 +84,7 @@ nav {
   background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider4.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
 }
 
   #fold .content {
