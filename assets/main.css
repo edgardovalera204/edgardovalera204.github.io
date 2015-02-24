@@ -8,7 +8,10 @@ dl, dd, ol, ul, figure {
 /* --------------------------------- */
 /* Common Styles for the Entire Site */
 /* --------------------------------- */
-body { width: 100%; }
+body { width: 100%; 
+       font-family: 'Changa One', sans-serif;
+       color: white;
+}
 
 h1, .countdown-amount {
   font-family: 'Changa One', sans-serif;
@@ -31,7 +34,7 @@ p, .countdown-period {
 /* Navbar Styling */
 /* -------------- */
 nav {
-  position: fixed;
+    position: fixed;
   width: 100%;
   background-color: rgba(0, 106, 246, 0.75);
 }
@@ -75,7 +78,7 @@ nav {
 /* ----------------------------- */
 #fold {
   /* Box Model */
-  padding-top: 220px;
+  padding-top: 200px;
   
   /* Typography */
   color: #fff;
@@ -99,3 +102,35 @@ nav {
     #fold .content h1 { margin-bottom: 10px; }
     #fold .content p { margin-bottom: 10px; }
     #fold .content .register-button { margin-bottom: 80px; }
+
+/* ----------------------------- */
+/* Footer Section of Each Page. */
+/* ----------------------------- */
+
+footer  {
+    width: 100%;
+    background-color: #000000;
+    padding-top: 75px;
+    padding-bottom: 400px;
+}
+
+footer div {
+    width: 28%;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+  }
+
+footer .image    {
+ width: 90px;
+    height: 90px;
+    float: left;
+    margin: 10px 10px 0px 0px;
+}
+
+footer .mediaicon   {
+width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px 30px 0px 0px;
+}
