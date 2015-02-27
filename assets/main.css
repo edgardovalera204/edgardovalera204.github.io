@@ -1,16 +1,15 @@
 /* Reset some basic elements */
-body, h1, h2, h3, p, blockquote, hr,
-dl, dd, ol, ul, figure {
+body, h1, h2, h3, p, a, nav, section, div, footer {
     margin: 0;
     padding: 0;
 }
 
-/* --------------------------------- */
-/* Common Styles for the Entire Site */
-/* --------------------------------- */
-body { width: 100%; 
-       font-family: 'Changa One', sans-serif;
-       color: white;
+/* --------------------------------- 
+   Common Styles for the Entire Site 
+   --------------------------------- */
+body {
+  width: 100%;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 h1, .countdown-amount {
@@ -37,33 +36,42 @@ p, .countdown-period {
   line-height: 1.25;
 }
 
-#fold p, .countdown-period { font-size: 32px; }
+a:link { color: rgba(255, 255, 255, 1.0); }
 
-/* -------------- */
-/* Navbar Styling */
-/* -------------- */
+a:visited { color: rgba(255, 255, 255, 0.5); }
+
+a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+a:active { background-color: rgba(255, 255, 255, 0.3); }
+
+/* -------------- 
+   Navbar Styling 
+   -------------- */
 nav {
-    position: fixed;
+  position: fixed;
   width: 100%;
   background-color: rgba(0, 106, 246, 0.75);
 }
 
-  nav div {
+  nav div, footer .container {
     /* Box model */
     display: table;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
     nav a:link, .register-button {
       /* Box Model */
       display: inline-block;
       margin-right: 20px;
-      padding: 20px;
       min-width: 100px;
+      padding: 20px;
       vertical-align: middle;
 
       /* Typography */
-      color: #fff;
       font-family: 'Changa One', sans-serif;
       font-size: 24px;
       text-align: center;
@@ -74,25 +82,22 @@ nav {
       border-radius: 4px;
     }
 
-    nav a:hover { background-color: rgba(255, 255, 255, 0.1); }
-    nav a:active { background-color: rgba(255, 255, 255, 0.2); }
-
     nav #home-button {
       width: 200px;
       height: 100px;
     }
 
-    .register-button { background-color: rgba(214, 0, 10, 1.0); }
+    .register-button {
+      margin-right: 0;
+      background-color: rgba(214, 0, 10, 1.0);
+    }
 
-/* ----------------------------- */
-/* First Section of the Homepage */
-/* ----------------------------- */
+/* ----------------------------- 
+   First Section of the Homepage 
+   ----------------------------- */
 #fold {
   /* Box Model */
   padding-top: 220px;
-  
-  /* Typography */
-  color: #fff;
   
   /* Visual */
   background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider4.jpg);
@@ -111,25 +116,23 @@ nav {
   }
 
     #fold .content h1 { margin-bottom: 10px; }
-    #fold .content p { margin-bottom: 10px; }
+
+    #fold .content p { font-size: 32px; }
+
     #fold .content .register-button { margin-bottom: 80px; }
 
-/* ---------------------------- */
-/* Footer Section of Each Page. */
-/* ---------------------------- */
+/* ---------------------------- 
+   Footer Section of Each Page. 
+   ---------------------------- */
 
 footer  {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100vh; 
   background-color: rgba(0, 0, 0, 1.0);
 }
 
-  footer .container {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 220px;
-  }
+  /* So that content is not underneath the navbar */
+  footer .container { padding-top: 220px; }
 
     #contact, #insta, #links {
       display: inline-block;
@@ -139,11 +142,25 @@ footer  {
       vertical-align: top;
     }
 
-      #links { margin-right: 0; }
+      #phone, #email { 
+        display: table;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+        #phone p, #email p {        
+          display: table-cell;
+          padding-left: 10px;
+          vertical-align: middle;
+        }
 
       #insta img, #links img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
         float: left;
         margin: 10px 10px 0px 0px;
       }
+
+      #insta a:nth-of-type(3n) img { margin-right: 0px; }
+
+      #links { margin-right: 0; }
