@@ -38,7 +38,7 @@ p, .countdown-period {
 
 a:link { color: rgba(255, 255, 255, 1.0); }
 
-a:visited { color: rgba(255, 255, 255, 0.5); }
+a:visited, #links p a:visited, nav a:visited { color: rgba(255, 255, 255, 0.5); }
 
 a:hover {
   background-color: rgba(255, 255, 255, 0.2);
