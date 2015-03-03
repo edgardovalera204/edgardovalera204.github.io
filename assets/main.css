@@ -30,7 +30,17 @@ h3 {
   text-transform: none;
 }
 
-p, .countdown-period {
+p   {
+    font-size: 20px;
+    font-family: georgia;
+}
+
+.indent {
+    text-indent: 20px;
+    }
+
+
+.countdown-period {
   font-family: 'Rokkitt', serif;
   font-size: 24px;
   line-height: 1.25;
@@ -51,7 +61,7 @@ a:active { background-color: rgba(255, 255, 255, 0.3); }
    Navbar Styling 
    -------------- */
 nav {
-  position: fixed;
+  position:absolute;
   width: 100%;
   background-color: rgba(0, 106, 246, 0.75);
 }
@@ -115,6 +125,27 @@ nav {
     text-align: center;
   }
 
+#fold .leftsidepage   {
+    position: absolute;
+    width: 48%;
+    margin: 0 0 0 1.5%;
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+        .rightsidepage  {
+            width: 50%;
+    margin: 0 0 0 50%;
+    padding-bottom: 15px;
+    text-align: left;
+        }
+
+        .lefttoright    {
+            width: 100%;
+            margin: 0 auto;
+            padding-bottom: 5px;
+        }
+
     #fold .content h1 { margin-bottom: 10px; }
 
     #fold .content p { font-size: 32px; }
@@ -132,7 +163,7 @@ footer  {
 }
 
   /* So that content is not underneath the navbar */
-  footer .container { padding-top: 220px; }
+  footer .container { padding-top: 100px; }
 
     #contact, #insta, #links {
       display: inline-block;
