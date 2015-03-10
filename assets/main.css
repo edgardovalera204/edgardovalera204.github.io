@@ -1,12 +1,16 @@
-/* Reset some basic elements */
+/* 
+ * Reset some basic elements
+ */
+
 body, h1, h2, h3, p, a, nav, section, div, footer {
     margin: 0;
     padding: 0;
 }
 
-/* --------------------------------- 
-   Common Styles for the Entire Site 
-   --------------------------------- */
+/* 
+ * Common Styles for the entire site 
+ */
+
 body {
   width: 100%;
   color: rgba(255, 255, 255, 1.0);
@@ -31,24 +35,15 @@ h3 {
 }
 
 p   {
-    font-size: 20px;
-    font-family: georgia;
+  font-size: 20px;
+  font-family: 'Rokkitt', serif;
 }
 
 .indent {
-    text-indent: 20px;
-    }
-
-
-.countdown-period {
-  font-family: 'Rokkitt', serif;
-  font-size: 24px;
-  line-height: 1.25;
+  text-indent: 20px;
 }
 
 a:link { color: rgba(255, 255, 255, 1.0); }
-
-a:visited, #links p a:visited, nav a:visited { color: rgba(255, 255, 255, 0.5); }
 
 a:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -57,11 +52,12 @@ a:hover {
 
 a:active { background-color: rgba(255, 255, 255, 0.3); }
 
-/* -------------- 
-   Navbar Styling 
-   -------------- */
+/* 
+ * Navbar Styling 
+ */
+
 nav {
-  position:absolute;
+  position: fixed;
   width: 100%;
   background-color: rgba(0, 106, 246, 0.75);
 }
@@ -102,68 +98,18 @@ nav {
       background-color: rgba(214, 0, 10, 1.0);
     }
 
-/* ----------------------------- 
-   First Section of the Homepage 
-   ----------------------------- */
-#fold {
-  /* Box Model */
-  padding-top: 220px;
-  
-  /* Visual */
-  background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider4.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-}
-
-  #fold .content {
-    /* Box Model */
-    width: 75%;
-    margin: 0 auto;
-
-    /* Typography */
-    text-align: center;
-  }
-
-#fold .leftsidepage   {
-    position: absolute;
-    width: 48%;
-    margin: 0 0 0 1.5%;
-    padding-bottom: 15px;
-    text-align: left;
-}
-
-        .rightsidepage  {
-            width: 50%;
-    margin: 0 0 0 50%;
-    padding-bottom: 15px;
-    text-align: left;
-        }
-
-        .lefttoright    {
-            width: 100%;
-            margin: 0 auto;
-            padding-bottom: 5px;
-        }
-
-    #fold .content h1 { margin-bottom: 10px; }
-
-    #fold .content p { font-size: 32px; }
-
-    #fold .content .register-button { margin-bottom: 80px; }
-
-/* ---------------------------- 
-   Footer Section of Each Page. 
-   ---------------------------- */
+/* 
+ * Footer Section of Each Page. 
+ */
 
 footer  {
   width: 100%;
-  min-height: 100vh; 
   background-color: rgba(0, 0, 0, 1.0);
+  z-index: -1000;
 }
 
   /* So that content is not underneath the navbar */
-  footer .container { padding-top: 100px; }
+  footer .container { padding-top: 60px; }
 
     #contact, #insta, #links {
       display: inline-block;
