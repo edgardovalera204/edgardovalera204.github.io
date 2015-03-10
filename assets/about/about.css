@@ -1,0 +1,20 @@
+#fold .leftsidepage   {
+  position: absolute;
+  width: 48%;
+  margin: 0 0 0 1.5%;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+  .rightsidepage  {
+    width: 50%;
+    margin: 0 0 0 50%;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .lefttoright    {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5px;
+  }
