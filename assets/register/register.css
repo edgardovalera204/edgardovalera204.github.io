@@ -1,0 +1,46 @@
+section { 
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  width: 75%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+
+a:link.date, a:visited.date {
+  display: table;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: rgba(255, 255, 255, 1.0);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a:hover.date { background-color: rgba(214, 0, 10, 1.0); }
+
+span.date, span.info {
+  display: inline-block;
+  float: left;
+  width: 25%;
+}
+
+span.info { width: 75%; }
+
+#britishcolumbia { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(britishcolumbia.jpg); }
+#alberta { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(alberta.jpg); }
+#manitoba { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(manitoba.jpg); }
+#saskatchewan { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(saskatchewan.jpg); }
+#ontario { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(ontario.jpg); }
+#novascotia { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(novascotia.jpg); }
+#quebec { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(quebec.jpg); }

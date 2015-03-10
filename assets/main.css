@@ -34,7 +34,7 @@ h3 {
   text-transform: none;
 }
 
-p   {
+p, a:link   {
   font-size: 20px;
   font-family: 'Rokkitt', serif;
 }
@@ -108,7 +108,6 @@ footer  {
   z-index: -1000;
 }
 
-  /* So that content is not underneath the navbar */
   footer .container { padding-top: 60px; }
 
     #contact, #insta, #links {
