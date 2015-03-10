@@ -1,5 +1,5 @@
 #fold .leftsidepage   {
-  position: absolute;
+  float: left;
   width: 48%;
   margin: 0 0 0 1.5%;
   padding-bottom: 15px;
