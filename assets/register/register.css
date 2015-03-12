@@ -1,4 +1,35 @@
-section { 
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+a:link.date, a:visited.date {
+  display: table;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  margin-left: -10px;
+  width: 100%;
+  color: rgba(255, 255, 255, 1.0);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a:hover.date { background-color: rgba(214, 0, 10, 1.0); }
+
+  span.date, span.info {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+
+  span.info { width: 75%; }
+
+/*
+ * Sections
+ */
+
+section, .jump-prov-item-img { 
   background-position: center;
   background-size: cover;
 }
@@ -10,37 +41,57 @@ section {
   margin: 0 auto;
 }
 
-h1 {
+#britishcolumbia { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(britishcolumbia.jpg); }
+#alberta         { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(alberta.jpg); }
+#manitoba        { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(manitoba.jpg); }
+#saskatchewan    { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(saskatchewan.jpg); }
+#ontario         { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(ontario.jpg); }
+#novascotia      { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(novascotia.jpg); }
+#quebec          { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(quebec.jpg); }
+
+#fold {
+  padding-top: 120px;
+  background-color: rgba(0, 0, 0, 1.0);
   text-align: center;
-  padding-bottom: 30px;
 }
 
+  #fold p {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
 
-a:link.date, a:visited.date {
+/*
+ * Province Navigation
+ */
+
+.jump-prov { width: 100%; }
+
+.jump-prov .container {
   display: table;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  color: rgba(255, 255, 255, 1.0);
-  text-decoration: none;
-  border-radius: 4px;
+  margin: 0 auto;
 }
 
-a:hover.date { background-color: rgba(214, 0, 10, 1.0); }
+  .jump-prov-item {
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
 
-span.date, span.info {
-  display: inline-block;
-  float: left;
-  width: 25%;
-}
+    .jump-prov-item-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 4px;
+    }
 
-span.info { width: 75%; }
+      .jump-prov-item-img.bc { background-image: url(britishcolumbia.jpg); }
+      .jump-prov-item-img.ab { background-image: url(alberta.jpg); }
+      .jump-prov-item-img.mb { background-image: url(manitoba.jpg); }
+      .jump-prov-item-img.sk { background-image: url(saskatchewan.jpg); }
+      .jump-prov-item-img.on { background-image: url(ontario.jpg); }
+      .jump-prov-item-img.ns { background-image: url(novascotia.jpg); }
+      .jump-prov-item-img.qb { background-image: url(quebec.jpg); }
 
-#britishcolumbia { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(britishcolumbia.jpg); }
-#alberta { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(alberta.jpg); }
-#manitoba { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(manitoba.jpg); }
-#saskatchewan { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(saskatchewan.jpg); }
-#ontario { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(ontario.jpg); }
-#novascotia { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(novascotia.jpg); }
-#quebec { background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(quebec.jpg); }
+    .jump-prov-item a:link { text-decoration: none; }
+    .jump-prov-item a:visited { color: rgba(255,255,255,1.0); }

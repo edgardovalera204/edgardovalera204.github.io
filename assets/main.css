@@ -2,7 +2,7 @@
  * Reset some basic elements
  */
 
-body, h1, h2, h3, p, a, nav, section, div, footer {
+body, h1, h2, h3, p, a, nav, section, div, footer, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -59,7 +59,7 @@ a:active { background-color: rgba(255, 255, 255, 0.3); }
 nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 106, 246, 0.75);
+  background-color: rgba(0, 106, 246, 0.9);
 }
 
   nav div, footer .container {
@@ -87,6 +87,8 @@ nav {
       /* Visual */
       border-radius: 4px;
     }
+
+    nav a:link:last-child { margin-right: 0; }
 
     nav #home-button {
       width: 200px;
