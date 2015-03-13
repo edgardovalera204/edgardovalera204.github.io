@@ -7,18 +7,8 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="../assets/main.css">
     <link rel="stylesheet" href="../assets/register/register.css">
-    <script type="text/javascript">
-      var $root = $('html, body');
-      $('a').click(function () {
-          var href = $.attr(this, 'href');
-          $root.animate({
-              scrollTop: $(href).offset().top
-          }, 500, function () {
-              window.location.hash = href;
-          });
-          return false;
-      });
-    </script>
+    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/assets/smooth-scroll.js"></script>
   </head>
 
   <body>
@@ -130,7 +120,7 @@
         </a>
       </div>
     </section>
-    
+
     <a id="manitoba" class="jump-link"></a>
     <section class="manitoba">
       <div class="content">
