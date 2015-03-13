@@ -7,6 +7,18 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="../assets/main.css">
     <link rel="stylesheet" href="../assets/register/register.css">
+    <script type="text/javascript">
+      var $root = $('html, body');
+      $('a').click(function () {
+          var href = $.attr(this, 'href');
+          $root.animate({
+              scrollTop: $(href).offset().top
+          }, 500, function () {
+              window.location.hash = href;
+          });
+          return false;
+      });
+    </script>
   </head>
 
   <body>
@@ -20,7 +32,7 @@
         <a href="/about/index.html">About</a>
       </div>
     </nav>
-    
+    <a id="top"></a>
     <section id="fold">
       <div class="content">
         <h1>Register</h1>
@@ -81,7 +93,8 @@
       </div>
     </section>
     
-    <section id="britishcolumbia">
+    <a id="britishcolumbia" class="jump-link"></a>
+    <section class="britishcolumbia">
       <div class="content">
         <h1>British Columbia</h1>
         <a href="" class="date">
@@ -95,7 +108,8 @@
       </div>
     </section>
     
-    <section id="alberta">
+    <a id="alberta" class="jump-link"></a>
+    <section class="alberta">
       <div class="content">
         <h1>Alberta</h1>
         <a href="" class="date">
@@ -117,7 +131,8 @@
       </div>
     </section>
     
-    <section id="manitoba">
+    <a id="manitoba" class="jump-link"></a>
+    <section class="manitoba">
       <div class="content">
         <h1>Manitoba</h1>
         <a href="" class="date">
@@ -131,7 +146,8 @@
       </div>
     </section>
     
-    <section id="saskatchewan">
+    <a id="saskatchewan" class="jump-link"></a>
+    <section class="saskatchewan">
       <div class="content">
         <h1>Saskatchewan</h1>
         <a href="" class="date">
@@ -145,7 +161,8 @@
       </div>
     </section>
     
-    <section id="ontario">
+    <a id="ontario" class="jump-link"></a>
+    <section class="ontario">
       <div class="content">
         <h1>Ontario</h1>
         <a href="" class="date">
@@ -175,7 +192,8 @@
       </div>
     </section>
     
-    <section id="novascotia">
+    <a id="novascotia" class="jump-link"></a>
+    <section class="novascotia">
       <div class="content">
         <h1>Nova Scotia</h1>
         <a href="" class="date">
@@ -183,14 +201,14 @@
           <span class="info">
             <p>Halifax</p>
             <p>SKI WENTWORTH</p>
-            <p>14595 Highway 4, Wentworth, Nova Scotia
-B0M 1Z0</p>
+            <p>14595 Highway 4, Wentworth, Nova Scotia B0M 1Z0</p>
           </span>
         </a>
       </div>
     </section>
     
-    <section id="quebec">
+    <a id="quebec" class="jump-link"></a>
+    <section class="quebec">
       <div class="content">
         <h1>Quebec</h1>
         <a href="" class="date">
@@ -218,6 +236,7 @@ B0M 1Z0</p>
       </div>
     </section>
     
+    <a href="#top" id="gotop"><img src="/assets/footer/gotop.png" alt="Go to the top of the page"></a>
     <footer>
       <div class="container">
         <div id="contact">
