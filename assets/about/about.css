@@ -1,20 +1,23 @@
 #fold .leftsidepage   {
   float: left;
   width: 48%;
+  height: 50%;
   margin: 0 0 0 1.5%;
   padding-bottom: 15px;
   text-align: left;
 }
 
   .rightsidepage  {
-    width: 50%;
+     float: auto;
+      width: 50%;
     margin: 0 0 0 50%;
     padding-bottom: 15px;
     text-align: left;
   }
 
-  .lefttoright    {
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 5px;
-  }
+    .lefttoright    {
+        width: auto;
+        margin-top: 10px;
+        padding: 5px 2px;
+     background-color: red;   
+    }
