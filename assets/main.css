@@ -41,8 +41,7 @@ p, a:link   {
 
 .indent {
   text-indent: 20px;
-    font-family: 'Rokkitt', serif;
-    line-height: 150%;
+  line-height: 150%;
 }
 
 a:link { color: rgba(255, 255, 255, 1.0); }
