@@ -1,19 +1,12 @@
-#fold .leftsidepage   {
+section { overflow: hidden; }
+
+.half {
   float: left;
   width: 48%;
-  height: 50%;
-  margin: 0 0 0 1.5%;
+  margin: 0 0 0 1%;
   padding-bottom: 15px;
   text-align: left;
 }
-
-  .rightsidepage  {
-     float: auto;
-      width: 50%;
-    margin: 0 0 0 50%;
-    padding-bottom: 15px;
-    text-align: left;
-  }
 
     .lefttoright    {
         width: auto;
