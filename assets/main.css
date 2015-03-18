@@ -24,7 +24,10 @@ h1, .countdown-amount {
 }
 
 h2 {
-  
+  font-family: 'Changa One', sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -44,9 +47,17 @@ p, a:link   {
   font-family: 'Rokkitt', serif;
 }
 
+.heading    {
+      font-family: 'Changa One', sans-serif;
+    font-size: 30px;
+    margin-top: 30px
+
+}
+
 .indent {
   text-indent: 20px;
   line-height: 150%;
+    padding: 10px;
       font-family: 'Rokkitt', serif;
 
 }
