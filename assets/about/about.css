@@ -13,6 +13,7 @@ section { overflow: hidden;
   width: 48%;
   height: auto;
   margin: 0 0 0 1%;
-  padding: 0 0 20px 0;
+  padding: 0 0 0 0;
   text-align: left;
+    line-height: 150%
 }
