@@ -1,5 +1,4 @@
-section { overflow: hidden;
-}
+section { overflow: hidden; }
 
 #festivalareapic {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(mud.JPG);
@@ -14,7 +13,6 @@ section { overflow: hidden;
   height: auto;
   margin: 0 0 0 1%;
   padding: 0 0 0 0;
-  text-align: left;
   line-height: 150%;
-    vertical-align: auto;
+  vertical-align: auto;
 }
