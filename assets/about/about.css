@@ -1,4 +1,12 @@
-section { overflow: hidden; }
+section { overflow: hidden;
+}
+
+#festivalareapic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(mud.JPG);
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
 
 .half {
   float: left;
@@ -8,10 +16,3 @@ section { overflow: hidden; }
   padding: 0 0 20px 0;
   text-align: left;
 }
-
-fullpic    {
-        width: 100%;
-        margin-top: 10px;
-        padding: 5px 2px;
-     background-color: red;   
-    }
