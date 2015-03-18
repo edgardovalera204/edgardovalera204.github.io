@@ -2,7 +2,7 @@
  * Reset some basic elements
  */
 
-body, h1, h2, h3, p, a, nav, section, div, footer, ul, li {
+body, h1, h2, h3, li, p, a, nav, section, div, footer, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -34,6 +34,11 @@ h3 {
   text-transform: none;
 }
 
+li  {
+    font-family: 'Rokkitt', serif;
+    font-size: 20px;
+}
+
 p, a:link   {
   font-size: 20px;
   font-family: 'Rokkitt', serif;
@@ -42,6 +47,8 @@ p, a:link   {
 .indent {
   text-indent: 20px;
   line-height: 150%;
+      font-family: 'Rokkitt', serif;
+
 }
 
 a:link { color: rgba(255, 255, 255, 1.0); }
@@ -122,11 +129,13 @@ footer  {
   z-index: -1000;
 }
 
-  footer .container { padding-top: 60px; }
+  footer .container { 
+      padding-top: 60px;
+  }
 
     #contact, #insta, #links {
-      display: inline-block;
-      margin-right: 60px;
+      float:left;
+        margin-right: 60px;
       margin-bottom: 60px;
       max-width: 320px;
       vertical-align: top;

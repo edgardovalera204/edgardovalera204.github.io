@@ -3,13 +3,14 @@ section { overflow: hidden; }
 .half {
   float: left;
   width: 48%;
+  height: auto;
   margin: 0 0 0 1%;
-  padding-bottom: 15px;
+  padding: 0 0 20px 0;
   text-align: left;
 }
 
-    .lefttoright    {
-        width: auto;
+fullpic    {
+        width: 100%;
         margin-top: 10px;
         padding: 5px 2px;
      background-color: red;   
