@@ -98,6 +98,8 @@ nav {
 
     nav a:link:last-child { margin-right: 0; }
 
+    nav a:visited { color: rgba(255, 255, 255, 1.0); }
+
     nav #home-button {
       width: 200px;
       height: 100px;
@@ -142,13 +144,13 @@ footer  {
       vertical-align: top;
     }
 
-      #phone, #email { 
+      #phone, #email, #time { 
         display: table;
         margin-top: 5px;
         margin-bottom: 5px;
       }
 
-        #phone p, #email p {        
+        #phone p, #email p, #time p {        
           display: table-cell;
           padding-left: 10px;
           vertical-align: middle;
