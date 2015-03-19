@@ -1,0 +1,28 @@
+.content {
+  /* Box Model */
+  width: 75%;
+  margin: 0 auto;
+
+  /* Typography */
+  text-align: center;
+}
+
+#fold {
+  /* Box Model */
+  padding-top: 220px;
+  
+  /* Visual */
+  background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+  #fold .content h1 { margin-bottom: 10px; }
+
+  #fold .content p { font-size: 32px; }
+
+#foamy {  }
+#muddy {  }
+#wet {  }
+
