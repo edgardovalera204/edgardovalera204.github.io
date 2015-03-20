@@ -1,25 +1,4 @@
-/*
- * Common attributes between sections
- */
-
-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-  .content {
-    /* Box Model */
-    width: 75%;
-    margin: 0 auto;
-
-    /* Typography */
-    text-align: center;
-  }
-
-    h2 { margin-bottom: 40px; }
+h2 { margin-bottom: 40px; }
 
 .half {
   width: 48%;
@@ -28,13 +7,7 @@ section {
   margin-right: 1%;
 }
 
-#fold {
-  /* Box Model */
-  padding-top: 220px;
-  
-  /* Visual */
-  background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider5.jpg);
-}
+#fold { background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider5.jpg); }
 
   #fold .content h1 { margin-bottom: 10px; }
 

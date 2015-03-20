@@ -2,7 +2,7 @@
  * Reset some basic elements
  */
 
-body, h1, h2, h3, p, a, nav, section, div, footer, ul, li {
+body, h1, h2, h3, p, a, nav, section, div, footer, ul, li, img, iframe {
     margin: 0;
     padding: 0;
 }
@@ -60,6 +60,14 @@ a:hover {
 
 a:active { background-color: rgba(255, 255, 255, 0.3); }
 
+.register-button {
+  margin-right: 0;
+  background-color: rgba(214, 0, 10, 1.0);
+  border-radius: 4px;
+}
+
+.register-button:visited { color: rgba(255, 255, 255, 1.0); }
+
 /* 
  * Navbar Styling 
  */
@@ -80,7 +88,6 @@ nav {
     nav a:link, .register-button {
       /* Box Model */
       display: inline-block;
-      margin-right: 20px;
       min-width: 100px;
       padding: 20px;
       vertical-align: middle;
@@ -91,9 +98,6 @@ nav {
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
-
-      /* Visual */
-      border-radius: 4px;
     }
 
     nav a:link:last-child { margin-right: 0; }
@@ -101,14 +105,45 @@ nav {
     nav a:visited { color: rgba(255, 255, 255, 1.0); }
 
     nav #home-button {
-      width: 200px;
-      height: 100px;
+      padding: 0;
+      transition-duration: 400ms;
+      transition-property: transform;
+      transition-timing-function: ease-in-out;
     }
 
-    .register-button {
-      margin-right: 0;
-      background-color: rgba(214, 0, 10, 1.0);
-    }
+      nav #home-button:hover {
+        background-color: transparent;
+        transform: scale(1.5);
+      }
+
+      nav #home-button img { height: 76px; vertical-align: middle; }
+
+/*
+ * Default section style
+ */
+
+section {
+  /* Box Model */
+  padding-top: 80px;
+  padding-bottom: 80px;
+  
+  /* Visual */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+  #fold { padding-top: 140px; }
+
+  .content {
+    /* Box Model */
+    width: 75%;
+    margin: 0 auto;
+
+    /* Typography */
+    text-align: center;
+  }
+
 
 /* 
  * Footer Section of Each Page. 
