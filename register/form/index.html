@@ -5,8 +5,10 @@
     <!-- fonts used -->
     <link href='http://fonts.googleapis.com/css?family=Rokkitt|Changa+One' rel='stylesheet' type='text/css'>
     <!-- stylesheets -->
-    <link rel="stylesheet" href="..//assets/main.css">
+    <link rel="stylesheet" href="../../assets/main.css">
+      <link rel="stylesheet" href="../../assets/the-race/therace.css">
     <link rel="stylesheet" href="../../assets/register/register.css">
+       <link rel="stylesheet" href="../../assets/about/about.css">
     <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="/assets/smooth-scroll.js"></script>
   </head>
@@ -24,14 +26,17 @@
     </nav>
     <a id="top"></a>
     
-    <section id="form">
-      <h2>Participant Information</h2>
+    <section class="red">
+        <div id="form">
       <form>
+                <h1>Participant Information</h1>
+<div class="half">
         <label>First Name:</label>
           <input type="text" name="fname">
-        <label>Last Name:</label>
+    
+        <br> <label>Last Name:</label>
           <input type="text" name="lname">
-        <label>T-Shirt Size:</label>
+        <br><label>T-Shirt Size:</label>
           <select name="shirt-size">
             <option value="no-shirt">I don't wear shirts</option>
             <option value="tiny-shirt">Tiny</option>
@@ -41,10 +46,13 @@
             <option value="bigger-shirt">Bigger</option>
             <option value="biggest-shirt">Biggest</option>
           </select>
+    </div>
+          
+          <div class="half">
         <label>Gender:</label>
           <input type="radio" name="male" value="male"><label>Male</label>
           <input type="radio" name="female" value="female"><label>Female</label>
-        <label>Date of Birth:</label>
+        <br><label>Date of Birth:</label>
           <select name="month">
             <option value="jan">January</option>
             <option value="feb">February</option>
@@ -146,11 +154,13 @@
             <option value="1966">1966</option>
             <option value="1965">1965</option>
           </select>
-        <label>Age on Race Day:</label>
+        <br><label>Age on Race Day:</label>
           <input type="text" name="age-raceday">
-        <label>Address:</label>
+        <br><label>Address:</label>
           <input type="text" name="address">
+              </div>
       </form>
+            </div>
     </section>
   </body>
 </html>

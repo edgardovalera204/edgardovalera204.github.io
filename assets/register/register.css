@@ -3,6 +3,18 @@ h1 {
   text-align: center;
 }
 
+form    {
+     /* Box Model */
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px;
+    
+
+    /* Typography */
+    text-align: center;
+    line-height: 300%;
+  }
+
 a:link.date, a:visited.date {
   /* Box Model */
   display: table;
