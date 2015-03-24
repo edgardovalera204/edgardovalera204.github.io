@@ -1,0 +1,16 @@
+#fold { background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(faqshomepagepic.jpg); 
+    background-position: center;
+}
+
+  #fold .content h1 { margin-bottom: 10px; }
+
+  #fold .content p { font-size: 32px; }
+
+.thirds {
+  float: left;
+  width: 20%;
+  height: auto;
+  margin: 0 0 0 9%;
+  padding: 0 0 0 0;
+  line-height: 150%;
+}

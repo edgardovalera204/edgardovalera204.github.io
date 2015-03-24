@@ -7,16 +7,16 @@ h2 { margin-bottom: 40px; }
   margin-right: 1%;
 }
 
-#fold { background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider5.jpg); }
+#fold { background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider5.jpg); background-size: 110%;
+}
 
   #fold .content h1 { margin-bottom: 10px; }
 
   #fold .content p { font-size: 32px; }
 
-.foamy { background-color: rgba(210, 10, 0, 1.0); }
-.muddy { background-color: rgba(0, 106, 246, 1.0); }
-.wet { background-color: rgba(210, 10, 0, 1.0); }
-.more { background-color: rgba(0, 106, 246, 1.0); }
+.red { background-color: rgba(210, 10, 0, 1.0); }
+.blue { background-color: rgba(0, 106, 246, 1.0); }
+
 
   .more .half {
     text-align: left;
