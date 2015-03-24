@@ -1,5 +1,6 @@
 #fold { background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(faqshomepagepic.jpg); 
-    background-position: center;
+    background-position: center;   background-size: cover;
+
 }
 
   #fold .content h1 { margin-bottom: 10px; }
