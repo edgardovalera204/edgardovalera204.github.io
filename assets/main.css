@@ -133,6 +133,7 @@ section, form {
     /* Box Model */
     width: 75%;
     margin: 0 auto;
+    overflow: hidden;
 
     /* Typography */
     text-align: center;
