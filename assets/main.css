@@ -40,12 +40,6 @@ p, a:link, li  {
   line-height: 150%;
 }
 
-.heading {
-  font-family: 'Changa One', sans-serif;
-  font-size: 30px;
-  margin-top: 30px
-}
-
 .indent {
   text-indent: 20px;
   padding: 15px;
@@ -119,7 +113,7 @@ nav {
       nav #home-button img { height: 76px; vertical-align: middle; }
 
 /*
- * Default section style
+ * Default section styles
  */
 
 section, form {
@@ -144,6 +138,23 @@ section, form {
     text-align: center;
   }
 
+.red { background-color: rgba(210, 10, 0, 1.0); }
+.blue { background-color: rgba(0, 106, 246, 1.0); }
+
+.half {
+  width: 48%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 40px;
+}
+
+.thirds {
+  width: 31%;
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+}
 
 /* 
  * Footer Section of Each Page. 
