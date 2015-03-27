@@ -6,11 +6,10 @@ h1 {
 a:link.date, a:visited.date {
   /* Box Model */
   display: table;
-  margin-left: -10px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  width: 100%;
+  padding-left: 2%;
+  width: 98%;
   
   /* Visual */
   border-radius: 4px;
@@ -102,3 +101,35 @@ a:hover.date, .jump-prov-item:hover { background-color: rgba(214, 0, 10, 1.0); }
 
     .jump-prov-item a:link { text-decoration: none; }
     .jump-prov-item a:visited { color: rgba(255,255,255,1.0); }
+
+/*
+ * Form styling
+ */
+
+fieldset {
+  border: none;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.half { margin-bottom: 0; }
+
+label {
+  display: inline-block;
+  text-align: right;
+  margin-right: 2%;
+}
+
+input, select {
+  width: 100%;
+  background-color: rgba(255, 255, 255, .5);
+  border: none;
+  padding: 10px;
+  font-family: 'Rokkitt', sans-serif;
+  font-size: 20px;
+}
+
+input:hover { background-color: rgba(255, 255, 255, 0.75); }
+
+input:focus { background-color: rgba(255, 255, 255, 1.0); }

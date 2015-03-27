@@ -2,7 +2,7 @@
  * Reset some basic elements
  */
 
-body, h1, h2, h3, p, a, nav, section, div, footer, ul, li, img, iframe {
+body, h1, h2, h3, p, a, nav, section, div, footer, ul, li, img, iframe, fieldset, input {
     margin: 0;
     padding: 0;
 }
@@ -23,9 +23,7 @@ h1, .countdown-amount, h2 {
   text-transform: uppercase;
 }
 
-h2 {
-  font-size: 32px;
-}
+h2 { font-size: 32px; }
 
 h3 {
   font-family: 'Rokkitt', sans-serif;
@@ -34,15 +32,10 @@ h3 {
   text-transform: none;
 }
 
-p, a:link, li  {
+p, a:link, li, label, span  {
   font-size: 20px;
   font-family: 'Rokkitt', serif;
   line-height: 150%;
-}
-
-.indent {
-  text-indent: 20px;
-  padding: 15px;
 }
 
 a:link { color: rgba(255, 255, 255, 1.0); }
@@ -112,11 +105,13 @@ nav {
 
       nav #home-button img { height: 76px; vertical-align: middle; }
 
+    nav .register-button { border-radius: 0; }
+
 /*
  * Default section styles
  */
 
-section, form {
+section {
   /* Box Model */
   padding-top: 80px;
   padding-bottom: 80px;
@@ -129,7 +124,7 @@ section, form {
 
   #fold { padding-top: 140px; }
 
-  .content {
+  .content, fieldset {
     /* Box Model */
     width: 75%;
     margin: 0 auto;
@@ -143,7 +138,7 @@ section, form {
 .blue { background-color: rgba(0, 106, 246, 1.0); }
 
 .half {
-  width: 46%;
+  width: 48%;
   float: left;
   margin-left: 1%;
   margin-right: 1%;
