@@ -38,6 +38,8 @@ p, a:link, li, label, span  {
   line-height: 150%;
 }
 
+ul { margin-left: 20px; }
+
 a:link { color: rgba(255, 255, 255, 1.0); }
 
 a:hover {
@@ -138,6 +140,12 @@ section {
 
 .red { background-color: rgba(210, 10, 0, 1.0); }
 .blue { background-color: rgba(0, 106, 246, 1.0); }
+.white {
+  background-color: rgba(230, 232, 234, 1.0);
+  color: rgba(60, 62, 64, 1.0);
+}
+
+  .white a { color: rgba(0, 106, 246, 1.0); }
 
 .half {
   width: 48%;

@@ -1,21 +1,5 @@
-section { overflow: hidden; }
-
-h1 {
-    font-size: 50px;
-}
 #festivalareapic {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(mud.JPG);
     background-position: center;
     background-size: cover;
-    padding: 30px;
-}
-
-.half {
-  float: left;
-  width: 48%;
-  height: auto;
-  margin: 0 0 0 1%;
-  padding: 0 0 0 0;
-  line-height: 150%;
-  vertical-align: auto;
 }
