@@ -55,6 +55,8 @@ a:active { background-color: rgba(255, 255, 255, 0.3); }
 
 .register-button:visited { color: rgba(255, 255, 255, 1.0); }
 
+.left { text-align: left; }
+
 /* 
  * Navbar Styling 
  */
@@ -120,6 +122,9 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  
+  /* Typography */
+  text-align: center;
 }
 
   #fold { padding-top: 140px; }
@@ -129,9 +134,6 @@ section {
     width: 75%;
     margin: 0 auto;
     overflow: hidden;
-
-    /* Typography */
-    text-align: center;
   }
 
 .red { background-color: rgba(210, 10, 0, 1.0); }
@@ -142,7 +144,6 @@ section {
   float: left;
   margin-left: 1%;
   margin-right: 1%;
-  margin-bottom: 40px;
 }
 
 .thirds {
