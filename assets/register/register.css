@@ -61,14 +61,6 @@ a:hover.date, .jump-prov-item:hover { background-color: rgba(214, 0, 10, 1.0); }
  * Province Navigation
  */
 
-/* so that the sections aren't underneath the navbar when using the anchors */
-.jump-link {
-  display: block;
-  position: relative;
-  top: -76px;
-  visibility: hidden;
-}
-
 .jump-prov { width: 100%; }
 
 .jump-prov .container {
@@ -126,6 +118,7 @@ input, select {
   background-color: rgba(255, 255, 255, .5);
   border: none;
   padding: 10px;
+  box-sizing: border-box;
   font-family: 'Rokkitt', sans-serif;
   font-size: 20px;
 }
