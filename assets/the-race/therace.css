@@ -1,7 +1,5 @@
 h2 { margin-bottom: 40px; }
 
-.half:last-of-type { width: 100%; }
-
 #fold { 
   background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider5.jpg);
   background-size: cover;
@@ -13,3 +11,6 @@ h2 { margin-bottom: 40px; }
   #fold .content p { font-size: 32px; }
 
 .half { margin-bottom: 40px; }
+
+  /* there's 5 questions, make the last one full width */
+  .half:last-of-type { width: 100%; }

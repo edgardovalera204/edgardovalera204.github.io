@@ -1,5 +1,7 @@
+/* give festival area includes section a background */
 #festivalareapic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(mud.JPG);
-    background-position: center;
-    background-size: cover;
+  /* Visual */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(mud.JPG);
+  background-position: center;
+  background-size: cover;
 }

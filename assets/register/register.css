@@ -1,8 +1,6 @@
-h1 {
-  padding-bottom: 30px;
-  text-align: center;
-}
+h1 { padding-bottom: 30px; }
 
+/* style of the links in each of the sections. styling the visited the same way so that its not purple */
 a:link.date, a:visited.date {
   /* Box Model */
   display: table;
@@ -16,29 +14,27 @@ a:link.date, a:visited.date {
   color: rgba(255, 255, 255, 1.0);
   
   /* Typography */
-  text-decoration: none;
   text-align: left;
+  text-decoration: none;
 }
 
 a:hover.date, .jump-prov-item:hover { background-color: rgba(214, 0, 10, 1.0); }
 
+  /* layout of the text */
   span.date, span.info {
+    /* Box Model */
     display: inline-block;
     float: left;
     width: 25%;
   }
 
-  span.info { width: 75%; }
+    span.info { width: 73%; }
 
 /*
  * Sections
  */
 
-.jump-prov-item-img { 
-  background-position: center;
-  background-size: cover;
-}
-
+/* each province section */
 .britishcolumbia { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(britishcolumbia.jpg); }
 .alberta         { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(alberta.jpg); }
 .manitoba        { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(manitoba.jpg); }
@@ -47,42 +43,47 @@ a:hover.date, .jump-prov-item:hover { background-color: rgba(214, 0, 10, 1.0); }
 .novascotia      { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(novascotia.jpg); }
 .quebec          { background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url(quebec.jpg); }
 
-#fold {
-  padding-top: 140px;
-  background-color: rgba(0, 106, 246, 1.0);
-}
-
   #fold p {
-    font-size: 32px;
+    /* Box Model */
     margin-bottom: 30px;
+    /* Typography */
+    font-size: 32px;
   }
 
 /*
  * Province Navigation
  */
 
-.jump-prov { width: 100%; }
-
+/* have a centered navigation */
 .jump-prov .container {
+  /* Box Model */
   display: table;
   margin: 0 auto;
+  width: 100%;
 }
 
+  /* style of province anchor */
   .jump-prov-item {
+    /* Box Model */
     display: inline-block;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
+    /* Visual */
     border-radius: 4px;
   }
 
-    .jump-prov-item-img {
+    /* use background image so that resize them in a square won't stretch them */
+    .jump-prov-item-img { 
+      background-position: center;
+      background-size: cover;
       width: 200px;
       height: 200px;
       border-radius: 2px;
     }
 
+      /* images */
       .jump-prov-item-img.bc { background-image: url(britishcolumbia.jpg); }
       .jump-prov-item-img.ab { background-image: url(alberta.jpg); }
       .jump-prov-item-img.mb { background-image: url(manitoba.jpg); }
@@ -99,28 +100,29 @@ a:hover.date, .jump-prov-item:hover { background-color: rgba(214, 0, 10, 1.0); }
  */
 
 fieldset {
-  border: none;
-  text-align: left;
+  /* Box Model */
   padding-top: 10px;
   padding-bottom: 10px;
+  /* Visual */
+  border: none;
 }
 
-.half { margin-bottom: 0; }
-
 label {
+  /* Box Model */
   display: inline-block;
-  text-align: right;
   margin-right: 2%;
+  /* Typography */
+  text-align: right;
 }
 
 input, select {
+  /* Box Model */
   width: 100%;
+  padding: 10px;
+  /* Visual */
   background-color: rgba(255, 255, 255, .5);
   border: none;
-  padding: 10px;
   box-sizing: border-box;
-  font-family: 'Rokkitt', sans-serif;
-  font-size: 20px;
 }
 
 input:hover { background-color: rgba(255, 255, 255, 0.75); }

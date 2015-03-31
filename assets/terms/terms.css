@@ -1,12 +1,8 @@
 #fold {
   background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(termsandconditionshead.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-}
-
-ul {
-  margin-left: 20px;
 }
 
 h1, h2 { margin-bottom: 10px; }

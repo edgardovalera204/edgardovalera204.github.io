@@ -3,82 +3,106 @@
  */
 
 body, h1, h2, h3, p, a, nav, section, div, footer, ul, li, img, iframe, fieldset, input {
+    /* Box Model */
     margin: 0;
     padding: 0;
 }
 
 /* 
- * Common Styles for the entire site 
+ * Common styles for the entire site 
  */
 
 body {
+  /* Box Model */
   width: 100%;
+  /* Typography */
   color: rgba(255, 255, 255, 1.0);
 }
 
 h1, .countdown-amount, h2 {
+  /* Typography */
   font-family: 'Changa One', sans-serif;
   font-size: 64px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
+/* h2 is just a smaller version of h1 so just define the size */
 h2 { font-size: 32px; }
 
 h3 {
+  /* Typography */
   font-family: 'Rokkitt', sans-serif;
   font-size: 32px;
   font-weight: 300;
   text-transform: none;
 }
 
-p, a:link, li, label, span  {
-  font-size: 20px;
+p, a:link, li, label, span, input, select  {
+  /* Typography */
   font-family: 'Rokkitt', serif;
+  font-size: 20px;
   line-height: 150%;
 }
 
+/* without margin the bullets disappear */
 ul { margin-left: 20px; }
 
 a:link { color: rgba(255, 255, 255, 1.0); }
 
 a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  /* Typography */
   text-decoration: none;
+  /* Visual */
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 a:active { background-color: rgba(255, 255, 255, 0.3); }
 
+/* style for the red buttons on the site */
 .register-button {
+  /* Box Model */
   margin-right: 0;
+  /* Visual */
   background-color: rgba(214, 0, 10, 1.0);
   border-radius: 4px;
 }
 
 .register-button:visited { color: rgba(255, 255, 255, 1.0); }
 
+/* text is centered by default in the sections, use this style to left align */
 .left { text-align: left; }
 
-/* so that the sections aren't underneath the navbar when using the anchors */
+/* 
+ * so that the sections aren't underneath the navbar 
+ * when using the anchors, displace the invisible anchors 
+ * by the navbar height 
+ */
 .jump-link {
-  display: block;
+  /* Positioning */
   position: relative;
   top: -76px;
+  /* Box Model */
+  display: block;
+  /* Visual */
   visibility: hidden;
 }
-
-.disclaimer { opacity: 0.5; }
 
 /* 
  * Navbar Styling 
  */
 
+/* nav stays at the top of the page while scrolling */
 nav {
+  /* Positioning */
   position: fixed;
+  /* Box Model */
   width: 100%;
+  /* Visual */
   background-color: rgba(0, 106, 246, 0.9);
 }
 
+  /* so that the nav items are centered */
   nav div, footer .container {
     /* Box model */
     display: table;
@@ -86,6 +110,7 @@ nav {
     margin-right: auto;
   }
 
+    /* style of each nav item */
     nav a:link, .register-button {
       /* Box Model */
       display: inline-block;
@@ -101,129 +126,176 @@ nav {
       text-transform: uppercase;
     }
 
-    nav a:link:last-child { margin-right: 0; }
-
     nav a:visited { color: rgba(255, 255, 255, 1.0); }
 
+    /* home button gets a noice css transition */
     nav #home-button {
+      /* Box Model */
       padding: 0;
+      /* Visual */
       transition-duration: 400ms;
       transition-property: transform;
       transition-timing-function: ease-in-out;
     }
 
       nav #home-button:hover {
+        /* Visual */
         background-color: transparent;
         transform: scale(1.5);
       }
 
-      nav #home-button img { height: 76px; vertical-align: middle; }
+      nav #home-button img {
+        /* Box Model */
+        height: 76px;
+        vertical-align: middle;
+      }
 
+    /* register button is rounded, but we don't want that in the nav */
     nav .register-button { border-radius: 0; }
 
 /*
  * Default section styles
  */
 
+/* 
+ * automatically have space at the top and bottom of the 
+ * sections, and make sure that background images fill the space 
+ * without being stretched
+ */
 section {
   /* Box Model */
   padding-top: 80px;
   padding-bottom: 80px;
   
   /* Visual */
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   
   /* Typography */
   text-align: center;
 }
 
+  /* 
+   * the first section of the page has the nav to worry about 
+   * so give extra padding at the top 
+   */
   #fold { padding-top: 140px; }
 
-  .content, fieldset {
-    /* Box Model */
-    width: 75%;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
+/* various colors that the sections can use */
 .red { background-color: rgba(210, 10, 0, 1.0); }
 .blue { background-color: rgba(0, 106, 246, 1.0); }
 .white {
   background-color: rgba(230, 232, 234, 1.0);
   color: rgba(60, 62, 64, 1.0);
 }
-
+  
+  /* links are white by default, so when using the .white style make them blue */
   .white a { color: rgba(0, 106, 246, 1.0); }
 
-.half {
-  width: 48%;
-  float: left;
-  margin-left: 1%;
-  margin-right: 1%;
-}
+  /* 
+   * the div to put the actual content in, so that its 
+   * centered and has whitespace at the sides 
+   */
+  .content, fieldset {
+    /* Box Model */
+    margin: 0 auto;
+    overflow: hidden;
+    width: 75%;
+  }
 
-.thirds {
-  width: 31%;
-  float: left;
-  margin-left: 1%;
-  margin-right: 1%;
-}
+    /* some basic grids to layout the content within the sections */
+    .half {
+      /* Box Model */
+      float: left;
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 48%;
+    }
+
+    .thirds {
+      /* Box Model */
+      float: left;
+      margin-left: 1%;
+      margin-right: 1%;
+      width: 31%;
+    }
 
 /* 
  * Footer Section of Each Page. 
  */
 
+/* style for the link in the bottom right corner that takes you to the top of the page */
 a:link#gotop, a:visited#gotop {
+  /* Positioning */
   position: fixed;
   bottom: 30px;
   right: 30px;
-  
+  /* Box Model */
+  height: 24px;
   padding: 20px;
+  /* Visual */
   background-color: rgba(0, 106, 246, 0.9);
   border-radius: 4px;
   box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.75);
-  height: 24px;
 }
 
 footer  {
+  /* Box Model */
   width: 100%;
+  /* Visual */
   background-color: rgba(0, 0, 0, 1.0);
-  z-index: -1000;
 }
 
-  footer .container { 
-      padding-top: 60px;
+  /* 
+   * being centered with the 'nav .container style', 
+   * add padding to the top and bottom
+   */
+  footer .container {
+    /* Box Model */
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
+    /* attributes off all the sections in the footer */
     #contact, #insta, #links {
+      /* Box Model */
       display: inline-block;
       margin-right: 60px;
-      margin-bottom: 60px;
-      max-width: 320px;
       vertical-align: top;
+      width: 320px;
     }
 
+      /* style for #contact's content */
       #phone, #email, #time { 
+        /* Box Model */
         display: table;
         margin-top: 5px;
         margin-bottom: 5px;
       }
 
-        #phone p, #email p, #time p {        
+        /* So that each line in the #contact section is inline with its respective image */
+        #phone p, #email p, #time p { 
+          /* Box Model */
           display: table-cell;
           padding-left: 10px;
           vertical-align: middle;
         }
 
+      /* for the disclaimer in the footer */
+      .disclaimer { opacity: 0.5; }
+
+      /* image grid for #insta and #links */
       #insta img, #links img {
-        width: 100px;
-        height: 100px;
+        /* Box Model */
         float: left;
+        height: 100px;
         margin: 10px 10px 0px 0px;
+        width: 100px;
       }
 
+      /* make every third image have no margin so that it fills the 320px space perfectly */
       #insta a:nth-of-type(3n) img { margin-right: 0px; }
 
+      /* have no margin on the #links section so that the footer isn't off-center */
       #links { margin-right: 0; }

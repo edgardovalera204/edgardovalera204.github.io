@@ -3,10 +3,11 @@
  */
 #fold {
   /* Visual */
+  background-attachment: fixed;
+  /* technically a hack, can't use solid colors to overlay an image, but a linear gradient will work */
   background: linear-gradient(rgba(0, 106, 246, 0.75), rgba(0, 106, 246, 0.75)), url(homeslider4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
   #fold .content h1 { margin-bottom: 10px; }
