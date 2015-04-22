@@ -17,6 +17,8 @@ body {
   width: 100%;
   /* Typography */
   color: rgba(255, 255, 255, 1.0);
+  /* Misc */
+  overflow-x: hidden;
 }
 
 h1, .countdown-amount, h2 {
@@ -299,3 +301,27 @@ footer  {
 
       /* have no margin on the #links section so that the footer isn't off-center */
       #links { margin-right: 0; }
+
+
+/* Tablet-ish sizes */
+@media (max-width: 1090px) {
+  #insta { display: none; }
+}
+
+@media (max-width: 940px) {
+  .content { width: 90%; }
+  .half, .thirds { width: 100%; }
+}
+
+@media (min-width: 320px) and (max-width: 720px) {
+  nav { overflow: scroll; }
+    nav div { white-space: nowrap; }
+
+  footer .container { width: 90%; }
+  
+    #contact, #links {
+      width: 100%;
+      margin-bottom: 60px;
+      margin-right: 0;
+    }
+}
