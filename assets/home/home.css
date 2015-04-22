@@ -15,10 +15,18 @@
   #fold .content p { font-size: 32px; }
 
 @media (min-width: 320px) and (max-width: 720px) {
-  #defaultCountdown { display: none; }
+  .is-countdown
+  .countdown-show4 .countdown-section {
+    width: 49.4%;
+    margin-bottom: 0;
+  }
   
-  #fold .content p {
-    font-size: 26px;
-    margin-bottom: 20px;
+  #fold .content p { font-size: 26px; }
+  
+  #fold .register-button {
+    margin-top: 40px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 }

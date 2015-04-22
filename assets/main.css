@@ -313,6 +313,7 @@ footer  {
   .half, .thirds { width: 100%; }
 }
 
+/* Phone sizes */
 @media (min-width: 320px) and (max-width: 720px) {
   nav { overflow: scroll; }
     nav div { white-space: nowrap; }
@@ -327,4 +328,7 @@ footer  {
       margin-bottom: 60px;
       margin-right: 0;
     }
-}
+  
+    #links { margin-bottom: 0; }
+  
+  a:link#gotop { display: none; }
