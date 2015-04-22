@@ -330,5 +330,6 @@ footer  {
     }
   
     #links { margin-bottom: 0; }
+      #links img { width: 70px; height: 70px; }
   
   a:link#gotop { display: none; }
