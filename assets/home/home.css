@@ -13,3 +13,12 @@
   #fold .content h1 { margin-bottom: 10px; }
 
   #fold .content p { font-size: 32px; }
+
+@media (min-width: 320px) and (max-width: 720px) {
+  #defaultCountdown { display: none; }
+  
+  #fold .content p {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+}
