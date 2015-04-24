@@ -155,6 +155,10 @@ nav {
     /* register button is rounded, but we don't want that in the nav */
     nav .register-button { border-radius: 0; }
 
+    /* hide the actual checkbox for mobile menu, only show label at smaller sizes */
+    #drawer-button { display: none; }
+    #drawer-button-label { display: none; }
+
 /*
  * Default section styles
  */
@@ -310,14 +314,51 @@ footer  {
 
 @media (max-width: 940px) {
   .content { width: 90%; }
-  .half, .thirds { width: 100%; }
+  /* all containers full width */
+  .half, .thirds {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 /* Phone sizes */
 @media (min-width: 320px) and (max-width: 720px) {
-  nav { overflow: scroll; }
-    nav div { white-space: nowrap; }
+  /* navbar */
+  nav div {
+    margin: 0;
+    width: 100%;
+  }
+    /* So that the home button is at the top when other nav items are visible */
+    nav div #home-button { display: table-header-group; }
+
+    /* Show the drawer button */
+    #drawer-button-label {
+      /* Positioning */
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      z-index: 10000;
+
+      /* Box Model */
+      display: block;
+      width: 74px;
+      height: 74px;
+
+      /* Visual */
+      background-image: url(/assets/nav/drawer-button.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    #drawer-button:checked ~ #drawer-button-label { background-image: url(/assets/nav/drawer-button-close.png) }
+
+    /* Hide all other navbar items */
+    nav a:link:not(#home-button) { display: none; }
+    /* Show when checked */
+    #drawer-button:checked ~ a:link:not(#home-button) { display: block; }
+    nav .register-button { margin-top: 10px; }
   
+  /* Tone down font sizes */
   h1 { font-size: 51px; }
   h2, h3 { font-size: 26px; }
   
@@ -330,6 +371,8 @@ footer  {
     }
   
     #links { margin-bottom: 0; }
+      /* scale down so that they fit in one line */
       #links img { width: 70px; height: 70px; }
   
+  /* hide in mobile */
   a:link#gotop { display: none; }
