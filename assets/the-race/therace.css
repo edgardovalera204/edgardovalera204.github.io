@@ -15,6 +15,13 @@ h2 { margin-bottom: 40px; }
   /* there's 5 questions, make the last one full width */
   .half:last-of-type { width: 100%; }
 
+.lazyYT {
+  float: left;
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 31%;
+}
+
 @media (min-width: 320px) and (max-width: 720px) {
   section .register-button {
     width: 100%;

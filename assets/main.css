@@ -2,7 +2,7 @@
  * Reset margin and padding of the elements used in this site
  */
 
-body, h1, h2, h3, p, a, nav, section, div, footer, ul, li, img, iframe, fieldset, input {
+body, h1, h2, h3, p, a:link, nav, section, div, footer, ul, li, img, iframe, fieldset, input {
     /* Box Model */
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@ body {
   /* Typography */
   color: rgba(255, 255, 255, 1.0);
   /* Misc */
-  overflow-x: hidden;
+  overflow: visible;
 }
 
 h1, .countdown-amount, h2 {
@@ -50,30 +50,76 @@ p, a:link, li, label, span, input, select  {
 /* without margin the bullets disappear */
 ul { margin-left: 20px; }
 
-a:link { color: rgba(255, 255, 255, 1.0); }
-
-a:hover {
-  /* Typography */
-  text-decoration: none;
-  /* Visual */
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-a:active { background-color: rgba(255, 255, 255, 0.3); }
-
-/* style for the red buttons on the site */
-.register-button {
-  /* Box Model */
-  margin-right: 0;
-  /* Visual */
-  background-color: rgba(214, 0, 10, 1.0);
-  border-radius: 4px;
-}
-
-.register-button:visited { color: rgba(255, 255, 255, 1.0); }
-
 /* text is centered by default in the sections, use this style to left align */
 .left { text-align: left; }
+
+/*
+ * Link styling
+ */
+
+a:link {
+  display: inline-block; /* needed for transform */
+  color: rgba(255, 255, 255, 1.0);
+
+  transition-duration: 200ms;
+  transition-property: transform, background;
+  transition-timing-function: ease-in-out;
+}
+
+a:hover { transform: none; }
+
+a:hover:not(.register-button) { background-color: rgba(255, 255, 255, 0.2); }
+
+a:active {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: none;
+}
+
+a:visited { color: rgba(255, 255, 255, 1.0); }
+
+/*
+ * style of each nav item
+ */
+
+nav a:link, .register-button:link {
+  /* Box Model */
+  min-width: 100px;
+  padding: 20px;
+  vertical-align: middle;
+
+  /* Typography */
+  font-family: 'Changa One', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  transition-property: background, transform;
+}
+
+nav a:visited { color: rgba(255, 255, 255, 1.0); }
+
+  nav #home-button {
+    /* Box Model */
+    padding: 0;
+    background: transparent;
+  }
+
+    nav #home-button img {
+      /* Box Model */
+      height: 76px;
+      vertical-align: middle;
+    }
+
+/*
+ * Red button style
+ */
+
+.register-button:link { background-color: rgba(214, 0, 10, 1.0); }
+
+.register-button:hover, nav #home-button:hover, footer a:hover { transform: scale(1.25); }
+
+.register-button:active, nav #home-button:active, footer a:active { transform: scale(0.9); }
 
 /* 
  * so that the sections aren't underneath the navbar 
@@ -100,6 +146,7 @@ nav {
   position: fixed;
   /* Box Model */
   width: 100%;
+  z-index: 10000;
   /* Visual */
   background-color: rgba(0, 106, 246, 0.9);
 }
@@ -111,49 +158,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
-
-    /* style of each nav item */
-    nav a:link, .register-button {
-      /* Box Model */
-      display: inline-block;
-      min-width: 100px;
-      padding: 20px;
-      vertical-align: middle;
-
-      /* Typography */
-      font-family: 'Changa One', sans-serif;
-      font-size: 24px;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-
-    nav a:visited { color: rgba(255, 255, 255, 1.0); }
-
-    /* home button gets a noice css transition */
-    nav #home-button {
-      /* Box Model */
-      padding: 0;
-      /* Visual */
-      transition-duration: 400ms;
-      transition-property: transform;
-      transition-timing-function: ease-in-out;
-    }
-
-      nav #home-button:hover {
-        /* Visual */
-        background-color: transparent;
-        transform: scale(1.5);
-      }
-
-      nav #home-button img {
-        /* Box Model */
-        height: 76px;
-        vertical-align: middle;
-      }
-
-    /* register button is rounded, but we don't want that in the nav */
-    nav .register-button { border-radius: 0; }
 
     /* hide the actual checkbox for mobile menu, only show label at smaller sizes */
     #drawer-button { display: none; }
@@ -206,9 +210,11 @@ section {
   .content, fieldset {
     /* Box Model */
     margin: 0 auto;
-    overflow: hidden;
+/*    overflow: hidden;*/
     width: 75%;
   }
+
+  .clearfix { overflow: hidden; clear: both; }
 
     /* some basic grids to layout the content within the sections */
     .half {
@@ -263,6 +269,8 @@ footer  {
     padding-bottom: 60px;
   }
 
+  footer a:hover { background: transparent; }
+
     /* attributes off all the sections in the footer */
     #contact, #insta, #links {
       /* Box Model */
@@ -296,7 +304,7 @@ footer  {
         /* Box Model */
         float: left;
         height: 100px;
-        margin: 10px 10px 0px 0px;
+        margin: 6px 6px 0px 0px;
         width: 100px;
       }
 
@@ -306,6 +314,9 @@ footer  {
       /* have no margin on the #links section so that the footer isn't off-center */
       #links { margin-right: 0; }
 
+/*
+ * Responsive Styling
+ */
 
 /* Tablet-ish sizes */
 @media (max-width: 1090px) {
